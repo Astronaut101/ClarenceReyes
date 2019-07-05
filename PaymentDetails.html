@@ -1,0 +1,60 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style7.css">
+    <title>Abakada Air | Payment Details</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="top-box">
+            <p><span class="left-icon">&#x2190;</span>Ticket Payment Details<span class="right-icon">&#xb7;&#xb7;&#xb7;</span></p>
+        </div>
+
+        <div class="middle-box">
+            <h1><span>P</span>45,000</h1>
+            <p>Manila, Philippines - New York City, USA</p>
+        </div>
+
+        <div class="bottom-box">
+            <button type="button" class="payment-option-btn">Pay with PayPal</button>
+            <div class="card-details">
+            <p>Pay with Mastercard or Apple Card</p>
+            <div class="card-num-field-group">
+            <label>Card Number</label><br>
+            <input type="text" class="card-num-field" placeholder="xxxx-xxxx-xxxx-xxxx">
+            </div>
+        <div class="card-num-field-group">
+            <label>Expiry Date</label>
+            <input type="text" class="date-field" placeholder="mm">
+            <input type="text" class="date-field" placeholder="yyyy">
+        </div>
+        <div class="cvc-field-group">
+                <label>CVC</label>
+                <input type="text" class="cvc-field" placeholder="xxx">
+            </div>
+            <div class="name-field-group">
+                    <label>Card Holder Name</label>
+                    <input type="text" class="name-field" placeholder="Full Name">
+                </div>
+
+                <button id="modal-btn" class="button">Pay Now</button>
+
+                <div id="my-modal" class="modal">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <span class="close">&times;</span>
+                      <h2>Payment Successful!</h2>
+                    </div>
+                    <div class="modal-body">
+                      <p></p>
+                      <p>Your Round Trip ticket for Manila, Philippines to New York City, USA has been booked succesfully!</p>
+                    </div>
+                    <div class="modal-footer">
+                    <p></p>
+                    </div>
+                  </div>
+                </div>
+        </div>
+        </div>
+        <script src="js/main.js"></script>
+</body>
+</html>

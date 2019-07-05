@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+        media="screen,projection" />
+    <link rel="stylesheet" type="text/css" href="css/style1.css">
+    <title>Abakada Air | Booking</title>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>  
+
+    <div class="booking-form">
+        <form class="col s8">
+            <h4>Find your dream destination and booking today</h4>
+            <div class="row">
+
+                <div class="input-field col s12">
+                    <input type="text" id="select_departure" class="validate select-departure">
+                    <label for="select_city">Select City</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input type="text" id="date_picker1" class="validate datepicker">
+                    <label for="date_picker1">Date of Departure</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <input type="text" id="date_picker2" class="validate datepicker">
+                    <label for="date_picker2">Date of Arrival</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <select>
+                        <option value="1">1 Adult</option>
+                        <option value="2">2 Adults</option>
+                        <option value="3">3 Adults</option>
+                        <option value="4">4 Adults</option>
+                    </select>
+                    <label>Guests</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <select>
+                        <option value="1">1 Child</option>
+                        <option value="2">2 Children</option>
+                        <option value="3">3 Children</option>
+                        <option value="4">4 Children</option>
+                    </select>
+                    <label>Children (Ages 2-12)</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <select>
+                        <option value="1">Round Trip</option>
+                        <option value="2">One Way</option>
+                        <option value="3">Multicity</option>
+                    </select>
+                    <label>Type of Trip</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <select>
+                        <option value="1">Economy</option>
+                        <option value="2">Premium Economy</option>
+                        <option value="3">Business</option>
+                        <option value="4">First Class</option>
+                    </select>
+                    <label>Cabin Class</label>
+                </div>
+
+                <div class="input-field col s12 right-align">
+                    <a href="TicketPrice.html" button class="btn waves-effect waves-ligh btn-large teal" type="submit">
+                        Search
+                        
+                    </a></button>
+                    
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+
+            // DATE PICKER
+            $('.datepicker').datepicker();
+
+            // FORM SELECT
+            $('select').formSelect();
+
+            //AUTO COMPLETE
+            $('input.select-departure').autocomplete({
+                data: {
+                    "Cancun": null,
+                    "The Bahamas": null,
+                    "Nova Scotia": null,
+                    "Florida": null,
+                    "New York City": null,
+                    "Alaska": null,
+                },
+            });
+
+        });
+
+    </script>
+</body>
+
+</html>

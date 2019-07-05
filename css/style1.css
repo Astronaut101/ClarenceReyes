@@ -1,0 +1,25 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://wallpaperaccess.com/full/30255.jpg)
+}
+.booking-form{
+    width: 500px;
+    margin: 100px;
+}
+
+h4{
+    color: #fff;
+    line-height: 48px;
+    margin-bottom: 25px;
+}
+
+.input-field>label{
+    color:  #fff;
+}
+input{
+    border-color: #fff;
+    color: #fff;
+}
+
+label{
+    text-transform: uppercase;
+}
